@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+}
+
+header {
+  background: linear-gradient(90deg, #5972b4, #2563eb);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.stages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.stages a {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.stages a:hover {
+  background: #1e3a8a;
+  transform: scale(1.05);
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content {
+  flex: 3;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box li {
+  margin-bottom: 10px;
+}
+
+.box a {
+  text-decoration: none;
+  color: #316ae6;
+  font-weight: bold;
+}
+
+.box a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+.year-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+  padding: 16px;
+}
+
+.year-selector button {
+  height: 60px;
+  font-size: 17px;
+  font-weight: bold;
+
+
+  color: #fff;
+
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.year-selector button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+/* Click */
+.year-selector button:active {
+  transform: scale(0.95);
+}
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+  .year-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .year-selector button {
+    height: 65px;
+    font-size: 18px;
+  }
+}
+.year-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+  padding: 16px;
+}
+
+.year-selector button {
+  height: 60px;
+  font-size: 17px;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.year-selector button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+/* Click */
+.year-selector button:active {
+  transform: scale(0.95);
+}
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+  .year-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .year-selector button {
+    height: 65px;
+    font-size: 18px;
+  }
+}
+.year-selector {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.year-btn {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  background: white;
+  color: #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.year-btn.active {
+  background: #007bff;
+  color: white;
+}
+/* .youtube-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+  }*/
+
+  .youtube-wrapper iframe {
+   
+    border-radius: 12px;
+  }
+
+   منع الضغط على زر يوتيوب 
+  .block-youtube {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 80px;
+    z-index: 10;
+    background: transparent;
+  }
+  .video-wrapper {
+  position: relative;
+}
+
+.video-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 60px;
+  z-index: 10;
+}
+iframe {
+  pointer-events: auto;
+}
