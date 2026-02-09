@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>prep 3 - Teacher's Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+const page = "p3.html";
+const password = prompt("Enter prep 3 password:");
+if(password !== "1111") window.location.href = "index.html";
+</script>
+
+<header>
+  <h1>📚 prep 3 - Lessons</h1>
+</header>
+
+<main class="layout">
+  <section class="content">
+    <h2>📺 Lessons</h2>
+    <div id="videos"></div>
+<div class="video-wrapper">
+  <iframe   src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&controls=1"
+  frameborder="0"
+  allowfullscreen></iframe>
+</div>
+  <aside class="sidebar">
+    <div class="box">
+      <h3>📝 Homework</h3>
+      <ul>
+        <li><a href="https://drive.google.com/drive/u/2/folders/1o4HkSmiYXkmHaeR9gUXpR5EaeMflB1Ta" target="_blank">algebra Homework</a></li>
+        <li><a href="https://drive.google.com/drive/u/2/folders/18bogdkAFHme_SWyEH2tNcaJ2AxLisM5i" target="_blank">geometry Homework</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>🧪 Exams</h3>
+      <ul>
+         <li><a href="https://drive.google.com/drive/u/2/folders/1qjTulNawOez7oxSkrIAG64KzgJGJXsYE" target="_blank">algebra Test</a></li>
+        <li><a href="https://drive.google.com/drive/u/2/folders/1c_2Qgp4nsbBOfw7mkzI426EOLD3GQIpm" target="_blank"> geometry Test</a></li>
+      </ul>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <p>Developed by Student Adam 🌟</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

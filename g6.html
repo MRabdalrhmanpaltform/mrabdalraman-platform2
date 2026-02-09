@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+const page = "g6.html";
+const password = prompt("Enter grade 6 password:");
+if(password !== "1111") window.location.href = "index.html";
+</script>
+
+<header>
+  <h1>📚 grade 6 - Lessons</h1>
+</header>
+
+<main class="layout">
+  <section class="content">
+    <h2>📺 Lessons</h2>
+    <div id="videos"></div>
+<div class="video-wrapper">
+  <iframe   src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&controls=1"
+  frameborder="0"
+  allowfullscreen></iframe>
+</div>
+  <aside class="sidebar">
+    <div class="box">
+      <h3>📝 Homework</h3>
+      <ul>
+      <li><a href="https://drive.google.com/drive/u/2/folders/1ny0jxbRESomIF4Von3aUA_AdDyTtq_6O" target="_blank">Homework</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>🧪 Exams</h3>
+      <ul>
+     <li><a href="https://drive.google.com/drive/u/2/folders/1fiWv4IuvgzuxlMjN_Z6GjiTVR35YkHL5" target="_blank">Quiz</a></li>>
+      </ul>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <p>Developed by Student Adam 🌟</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
